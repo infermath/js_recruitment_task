@@ -34,7 +34,7 @@
               <option value="books">Books</option>
               <option value="business">Business</option>
               <option value="culture">Culture</option>
-              <option value="Sport">Sport</option>
+              <option value="sport">Sport</option>
             </select>
           </div>
         </div>
@@ -42,10 +42,16 @@
           <div class="column column-20">
             <label for="activePageSelect">Active Page</label>
             <select id="activePageSelect">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
+              <option value="1" class="activePageOption">1</option>
+              <option value="2" class="activePageOption">2</option>
+              <option value="3" class="activePageOption">3</option>
+              <option value="4" class="activePageOption">4</option>
+              <option value="5" class="activePageOption">5</option>
+              <option value="6" class="activePageOption">6</option>
+              <option value="7" class="activePageOption">7</option>
+              <option value="8" class="activePageOption">8</option>
+              <option value="9" class="activePageOption">9</option>
+              <option value="10" class="activePageOption">10</option>
             </select>
           </div>
         </div>
@@ -58,7 +64,7 @@
           <div class="column column-65">
             <h2 class="newsColumnTitle">News List</h2>
 
-            <ul class="newsList">
+            <ul id="newsList" class="newsList">
               <li>
                 <article class="news">
                   <header>
@@ -66,8 +72,8 @@
                   </header>
                   <section class="newsDetails">
                     <ul>
-                      <li><strong>Section Name:</strong> Sample Section</li>
-                      <li><strong>Publication Date:</strong> 06.12.2018</li>
+                      <li><strong>Section Name:</strong> <span>Sample Section</span> </li>
+                      <li><strong>Publication Date:</strong> <span>06.12.2018</span></li>
                     </ul>
                   </section>
                   <section class="newsActions">
@@ -77,11 +83,15 @@
                 </article>
               </li>
             </ul>
+
+            <div id="no-results">
+              <h3>No results found :(</h3>
+            </div>
           </div>
           <div class="column column-55">
             <h2 class="newsColumnTitle">Read Later</h2>
 
-            <ul class="readLaterList">
+            <ul id="readLaterList" class="readLaterList">
               <li>
                 <h4 class="readLaterItem-title">Saved news title</h4>
                 <section>
